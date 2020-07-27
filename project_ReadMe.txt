@@ -11,4 +11,6 @@ mnl_20200727 : Code with dice images instead of text telling the numbers
 
 mnl_20200727_2 : final code for project https://codelabs.developers.google.com/codelabs/basic-android-kotlin-training-dice-roller-images/#5
 
-mnl_20200727_1expermentation : Code from mnl_20200727 plus Toast message to tell which number is rolled
+mnl_20200727_1expermentation : Code from mnl_20200727 PLUS Toast message to tell which number is rolled
+
+mnl_20200727_3challenge : Final code from mnl_20200727_2 PLUS second dice added to activity and code to roll.
