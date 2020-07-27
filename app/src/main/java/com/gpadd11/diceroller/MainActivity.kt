@@ -14,9 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val rollButton: Button = findViewById(R.id.button)
-        rollButton.setOnClickListener {
-            rollDice()
-        }
+        rollButton.setOnClickListener { rollDice() }
     }
 
     private fun rollDice() {
@@ -35,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         diceImage.contentDescription = diceRoll.toString()
+
+        Toast.makeText(this, "You rolled ${diceRoll.toString()} this time", Toast.LENGTH_SHORT).show()
+
     }
 }
 
