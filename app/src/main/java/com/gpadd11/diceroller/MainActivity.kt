@@ -31,8 +31,23 @@ class MainActivity : AppCompatActivity() {
             5 -> diceImage.setImageResource(R.drawable.dice_5)
             else -> diceImage.setImageResource(R.drawable.dice_6)
         }
-
         diceImage.contentDescription = diceRoll.toString()
+
+        // code for second dice starts here
+        val dice2 = Dice(6)
+        val dice2Roll = dice2.roll()
+
+        val dice2Image : ImageView = findViewById(R.id.imageView2)
+        val dice2ImageResource = when(dice2Roll) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
+        dice2Image.setImageResource(dice2ImageResource)
+        dice2Image.contentDescription = dice2Roll.toString()
     }
 }
 
